@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="text-align: left">
+    <div style="text-align: left; display: inline-grid;">
       <img alt="Vue logo" src="./assets/logo.png" />
       <showDataVue></showDataVue>
       <setDataVue></setDataVue>

@@ -2,6 +2,7 @@ import { TObject, importState } from '../TStore.plugin';
 import TStore from '../TStore.plugin';
 
 //interface.ts
+//1. declare my module
 interface IAge {
     myAge: number;
     newyear(): void;
@@ -12,17 +13,20 @@ interface ICount {
     add(n: number): void;
 }
 
+//2. declare type state
 export type MyState = { age: IAge } & { count: ICount } & TObject;
 
 
-///file data store
+///3. file data store
 export const count: ICount = {
     myCount: 1,
     add(n: number) {
         this.myCount += n;
     }
 }
-importState({ count });
+
+//import one data to state.
+//importState({ count });
 
 export const age: IAge = {
     myAge: 1,
@@ -30,7 +34,13 @@ export const age: IAge = {
         this.myAge++;
     }
 };
-importState({ age });
+
+//import one data to state.
+//importState({ age });
+
+//4. import mutil data to state.
+importState({ age }, { count });
+
 
 /// store.ts
 export function useAppStore(): MyState {
@@ -38,3 +48,8 @@ export function useAppStore(): MyState {
 }
 const mystate = new TStore<MyState>();
 export default mystate;
+
+//5. use in component
+// const store = useAppStore();
+// store.age.myAge++
+// store.age.newyear()

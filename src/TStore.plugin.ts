@@ -3,9 +3,9 @@ import { App, reactive } from 'vue';
 export type TObject = Record<string, unknown>;
 
 const mState: unknown[] = [];
-export function importState(d: unknown): void {
-    console.log("importState", d);
-    mState.push(d);
+export function importState(...d: unknown[]): void {
+    console.log("importState", ...d);
+    mState.push(...d);
 }
 
 function exportState() {
