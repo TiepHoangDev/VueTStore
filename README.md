@@ -1,4 +1,6 @@
-![demo](demo.png)
+#TStore.plugin
+
+![demo](demo.gif)
 
 ```typescript
 import { TObject, importState } from '../TStore.plugin';
