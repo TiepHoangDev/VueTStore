@@ -1,4 +1,4 @@
-# test-plugin
+![demo](demo.png)
 
 ## Project setup
 ```
