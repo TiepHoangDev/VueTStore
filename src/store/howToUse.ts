@@ -1,5 +1,4 @@
-import { TObject, importState } from '../TStore.plugin';
-import TStore from '../TStore.plugin';
+import TStore, { importState } from '../tstore-vue3ts';
 
 //interface.ts
 //1. declare my module
@@ -14,7 +13,7 @@ interface ICount {
 }
 
 //2. declare type state
-export type MyState = { age: IAge } & { count: ICount } & TObject;
+export type MyState = { age: IAge } & { count: ICount };
 
 
 ///3. file data store

@@ -1,7 +1,26 @@
 {
-  "name": "test-plugin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tstore-vue3ts",
+  "version": "1.0.15",
+  "description": "Simple State Management for Vuejs 3 typescript",
+  "main": "tstore-vue3ts.ts",
+  "files": [
+    "src/tstore-vue3ts.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiepHoangDev/VueTStore.git"
+  },
+  "keywords": [
+    "TStore-vue3ts",
+    "tstore-vue3ts",
+    "TStore"
+  ],
+  "author": "tiephoang.dev <tiephoang.dev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiepHoangDev/VueTStore/issues"
+  },
+  "homepage": "https://github.com/TiepHoangDev/VueTStore#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
